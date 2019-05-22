@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Set Method</title>
+</head>
+<body>
+	<h2>javascript setFullYear()</h2>
+	<p>The setFullYear() method sets the year of a date object:</p>
+	<p id="sagor"></p>
+	<script type="text/javascript">
+		var d=new Date();
+		d.setFullYear(2000);
+		document.getElementById("sagor").innerHTML=d;
+	</script>
+	<h2>JavaScript setFullYear()</h2>
+
+<p>The setFullYear() method can optionally set month and day.</p>
+<p>Please note that month counts from 0. December is month 11:</p>
+<p id="sagor1"></p>
+<script type="text/javascript">
+	var d= new Date();
+	d.setFullYear(2020, 11 ,3);
+	document.getElementById("sagor1").innerHTML=d;
+</script>
+<h2>javascript steMonth()</h2>
+<p>The steMonth() method sets the mont of a date object.</p>
+<p>Note that months count from 0. December is month 11;</p>
+<p id="sagor2"></p>
+<script type="text/javascript">
+	var d = new Date(); 
+	d.setMonth(11);
+	document.getElementById("sagor2").innerHTML=d;
+</script>
+<h2>javascript steDate()</h2>
+<p>The setDate() method sets the day of a date object: </p>
+<p id="sagor3"></p>
+<script type="text/javascript">
+	var d=new Date();
+	d.setDate(15);
+	document.getElementById("sagor3").innerHTML=d;
+</script>
+<h2>javascript setDate()</h2>
+<p>The setDate() method can be used to add days to a  date.</p>
+<p id="sagor4"></p>
+<script type="text/javascript">
+	var d = new Date();
+	d.setDate(d.getDate()+50);
+	document.getElementById("sagor4").innerHTML=d;
+</script>
+<h2>JavaScript setHours()</h2>
+
+<p>The setHours() method sets the hours of a date object:</p>
+<p id="sagor5"></p>
+<script type="text/javascript">
+	var d= new Date();
+	d.setHours(22);
+	document.getElementById("sagor5").innerHTML=d;
+
+</script>
+<h2>JavaScript setMinutes()</h2>
+
+<p>The setMinutes() method sets the minutes of a date object (0-59):</p>
+<p id="sagor6"> </p>
+<script type="text/javascript">
+	var d = new Date();
+	d.setMinutes(30);
+	document.getElementById("sagor6").innerHTML=d;
+</script>
+
+<h2>JavaScript setSeconds()</h2>
+
+<p>The setSeconds() method sets the seconds of a date object (0-59):</p>
+<p id="sagor7"></p>
+<script type="text/javascript">
+	var d = new Date();
+	d.setSeconds(30);
+	document.getElementById("sagor7").innerHTML=d;
+</script>
+
+<p id="sagor8"></p>
+<script type="text/javascript">
+	var today, someday, text;
+	today =new Date();
+	someday=new Date();
+	someday.setFullYear(2100,0,14);
+	if (someday>today) {
+		text ="Today is before January 14, 2100";
+	}else{
+		text ="Today is after January 14, 2100";
+	}
+	document.getElementById("sagor8").innerHTML=text;
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h2>javascript Array.forEach()</h2>
+<p>calls a function once for each array element.</p>
+<p id="sagor"></p>
+<script type="text/javascript">
+	var ts="";
+	var numbers= [45, 4, 9, 16, 25];
+	numbers.forEach(myFunction);
+	document.getElementById("sagor").innerHTML=ts;
+	function myFunction(value,index,array){
+		ts=ts+value+"<br>";
+	}
+</script>
+<h2>javascript Array.forEach()</h2>
+<p>Call a function once for each array element.</p>
+<p id="sagor1"></p>
+<script type="text/javascript">
+	var a="";
+	var numbers=[45, 4, 9, 16, 25];
+	numbers.forEach(sagor)
+	document.getElementById("sagor1").innerHTML=a;
+	function sagor(value){
+		a=a+value+"<br>";
+	}
+</script>
+<h2>javascript Array.map()</h2>
+<p>Creates a new array by performing a function on each array element.</p>
+<p id="sagor2"></p>
+<script type="text/javascript">
+	var numbers1=[45, 4, 9, 16, 25];
+	var numbers2=numbers1.map(sagor);
+	document.getElementById("sagor2").innerHTML=numbers2;
+	function sagor(value, index, array){
+		return value*3;
+	}
+</script>
+<h2>javascript Array.filter()</h2>
+<p>Creates a new array with all array element that passes a test.</p>
+<p id="sagor3"></p>
+<script type="text/javascript">
+	var numbers=[45, 4, 9, 16, 25];
+	var over18=
+	numbers.filter(sagor);
+	document.getElementById("sagor3").innerHTML=over18;
+	function sagor(index,array){
+		return index>18;
+	}
+</script>
+<h2>javascript Array.reduce()</h2>
+<p>This example finds the sum of all numbers in an array:</p>
+<p id="sagor4"></p>
+<script type="text/javascript">
+	var numbers=[45, 4, 9, 16, 25];
+	var sum=numbers.reduce(sagor);
+	document.getElementById("sagor4").innerHTML="The sum is " +sum;
+	function sagor(total,value,index,array){
+		return total+value;
+	}
+</script>
+<h2>javascript Array.reduceRight()</h2>
+<p>This example finds the sum of all numbers in an array</p>
+<p id="sagor5"></p>
+<script type="text/javascript">
+	var numbers= [45, 4, 9, 16, 25];
+	var sum= numbers.reduceRight(sagor);
+	document.getElementById("sagor5").innerHTML="The sum is"+sum;
+	function sagor(total,value,index,array){
+		return total+value;
+	}
+</script>
+<h2>javascript Array.every()</h2>
+<p>The every() method checks if all array values pass a test.</p>
+<p id="sagor6"></p>
+<script type="text/javascript">
+	var numbers= [45, 4, 9, 16, 25];
+	 var allover18=numbers.every(sagor);
+	 document.getElementById("sagor6").innerHTML="All over 18 is" +allover18;
+		function sagor (value){
+	 return value>18}
+</script>
+<h2>javascript Array.indexOf()</h2>
+<p id="sagor7"></p>
+<script type="text/javascript">
+	var fruits=["Apple", "Orange", "Apple", "Mango"];
+	var a =fruits.indexOf("Apple");
+	document.getElementById("sagor7").innerHTML="Apple is found in position"+(a+1);
+
+</script>
+<p>The indexOf() dose not work in Internet Explorer 8 earlier version.</p>
+	<h2>javascript Array.lastIndexOf()</h2>
+	<p id="sagor8"</p>
+		<script type="text/javascript">
+			var fruits=["Apple", "Orange", "Apple", "Mango"];
+			var a=fruits.lastIndexOf("Apple");
+			document.getElementById("sagor8").innerHTML="Apple is found in position"+(a+1);
+
+		</script>
+		<p>The lastindexOf() dose not work in Internet Explorer 8 earlier version.</p>
+		<h2>javascript Array.find()</h2>
+		<p id="sagor9"></p>
+		<script type="text/javascript">
+			var numbers= [4, 9, 16, 25, 29];
+			var first=numbers.find(sagor);
+			document.getElementById("sagor9").innerHTML="First number over 18 is " + first;
+			function sagor(value,index, array){
+				return value>18;
+			}
+		</script>
+		<h2>javascript Array.findIndex()</h2>
+		<p id="sagor10"></p>
+		<script type="text/javascript">
+			var numbers=  [4, 9, 16, 25, 29];
+			var first=numbers.findIndex(sagor);
+			document.getElementById("sagor10").innerHTML="First number over 18 has index "+first;
+			function sagor(value,index,array){
+				return value>18;
+			}
+		</script>
+
+
+
+</body>
+</html>

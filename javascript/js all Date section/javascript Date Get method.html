@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h2>javaScript getTime()</h2>
+	<p>The internal clock in javaScript counts from midnight January 1,1970.</p>
+	<p>The getTime() function returns the number of milliseconds since then:</p>
+	<p id="sagor"></p>
+	<script type="text/javascript">
+		var d=new Date();
+		document.getElementById("sagor").innerHTML=d.getTime();
+	</script>
+	<h2>javascript getFullYear()</h2>
+	<p>The getFullYear() method returns the full year of a date:</p>
+	<p id="sagor1"></p>
+	<script type="text/javascript">
+		var d=new Date();
+		document.getElementById("sagor1").innerHTML=d.getFullYear();
+	</script>
+	<h2>javascript getMonth()</h2>
+	<p>The getMonth() method returns the month of a date as a number from 0 to 11.</p>
+	<p>To get the correct month, you must add 1:</p>
+	<p id="sagor2"></p>
+	<script type="text/javascript">
+		var d=new Date();
+		document.getElementById("sagor2")
+		.innerHTML=d.getMonth()
+	</script>
+	<h2>javascript getMonth()</h2>
+	<p>The getMonth() method returns the month as a number:</p>
+	<p>You can use an array to display the name of the month:</p>
+	<p id="sagor3"></p>
+	<script type="text/javascript">
+		var d=new Date();
+		var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+		document.getElementById("sagor3").innerHTML=months[d.getMonth()];
+	</script>
+	<h2>javascript getDate()</h2>
+	<p>The getDate() method returns the day of a date as a number (1-31):</p>
+	<p id="sagor4"></p>
+	<script type="text/javascript">
+		var d=new Date();
+		document.getElementById("sagor4").innerHTML=d.getDate();
+	</script>
+	<h2>javascript getHours()</h2>
+	<p>The getHours() method returns the hours of a date as a number (0-23):</p>
+	<p id="sagor5"></p>
+	<script type="text/javascript">
+		var d=new Date();
+		document.getElementById("sagor5").innerHTML=d.getHours();
+	</script>
+	<h2>javascript getMinites()</h2>
+	<p>The getMinutes() method returns the minutes of a date as a number (0-59):</p>
+	<p id="sagor6"></p>
+	<script type="text/javascript">
+		var d=new Date();
+		document.getElementById("sagor6").innerHTML=d.getMinutes();
+
+	</script>
+
+<h2>JavaScript getSeconds()</h2>
+
+<p>The getSeconds() method returns the seconds of a date as a number (0-59):</p>
+<p id="sagor7"></p>
+<script type="text/javascript">
+	var d=new Date();
+	document.getElementById("sagor7").innerHTML=d.getSeconds();
+</script>
+<h2>JavaScript getMilliseconds()</h2>
+
+<p>The getMilliseconds() method returns the milliseconds of a date as a number (0-999):</p>
+<p id="sagor8"></p>
+<script type="text/javascript">
+	var d=new Date();
+	document.getElementById("sagor8").innerHTML=d.getMilliseconds();
+</script>
+<h2>JavaScript getDay()</h2>
+
+<p>The getDay() method returns the weekday as a number:</p>
+<p id="sagor9"></p>
+<script type="text/javascript">
+	var d=new Date();
+	document.getElementById("sagor9").innerHTML=d.getDay();
+</script>
+<h2>javascript getDay</h2>
+<p>The getDay() method returns the weekday as a number:</p>
+<p id="sagor10"></p>
+<script type="text/javascript">
+	var d=new Date();
+	var days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+	document.getElementById("sagor10").innerHTML=days[d.getDay()];
+</script>
+
+
+
+
+</body>
+</html>

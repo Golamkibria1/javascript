@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript number method.</title>
+</head>
+<body>
+	<h2>javascript Number Method</h2>
+	<p>The toString() method converts a number to a string.</p>
+	<p id="sagor"></p>
+	<script type="text/javascript">
+		var x=123;
+		document.getElementById("sagor").innerHTML=
+		x.toString()+"<br>"+(123).toString()+"<br>"+(100+23).toString()
+	</script>
+<h2>javascript Number Method</h2>
+<p>The toExponential() method returns a string, with the number rounded and written using exponential notation.</p>
+<p>An optional parameter defines the number of digits behind the decimal point.</p>
+<p id="sagor1"></p>
+<script type="text/javascript">
+	var x=9.656;
+	document.getElementById("sagor1").innerHTML=
+	x.toExponential()
+</script>
+<h2>javascript Number Method</h2>
+<p>The toFixed() method rounds a number to a given number to a given number of digits.</p>
+<p>For working with money, toFixed(2) is perfect.</p>
+<p id="sagor2"></p>
+<script type="text/javascript">
+	var x=9.65;
+	document.getElementById("sagor2").innerHTML=
+	x.toFixed(4)+"<br>"+
+	x.toFixed(2)+"<br>"+
+	x.toFixed(5)+"<br>"+
+	x.toFixed(6)+"<br>"+
+	x.toFixed(20);
+</script>
+<h2>javascript Number Method</h2>
+<p>The toPrecision() method returns a string, with a number written with a specified length:</p>
+<p id="sagor3"></p>
+<script type="text/javascript">
+	var x=9.654;
+	document.getElementById("sagor3").innerHTML=
+	x.toPrecision(3)
+</script>
+<h2>javascript Number Method</h2>
+<p>The valueOf() method returns a number as a number:</p>
+<p id="sagor4"></p>
+<script type="text/javascript">
+	var x=123;
+	document.getElementById("sagor4").innerHTML=
+	x.valueOf()+"<br>"+
+	(124).valueOf()+"<br>"+
+	(100+23).valueOf();
+</script>
+<h2>javascript Global Method</h2>
+<p>The Number() method converts variables to numbers:</p>
+<p id="sagor5"></p>
+<script type="text/javascript">
+	document.getElementById("sagor5").innerHTML=
+	Number(true) +"<br>"+
+	Number(false) +"<br>"+
+	Number("10") +"<br>"+
+	Number(" 10")+"<br>"+
+	Number("10      ")+"<br>"+
+	Number("  10  ")+"<br>"+
+	Number("jhon")
+</script>
+<h2>javascript Global Method</h2>
+<p>The Number() method can convert a date to a number:</p>
+<p id="sagor6"></p>
+<script type="text/javascript">
+	var x=new Date("2017-09-3");
+	document.getElementById("sagor6").innerHTML=Number(x);
+</script>
+<h2>javascript Global Functions</h2>
+<p>The global javascript function parseInt() converts strings to number:</p>
+<p id="sagor7"></p>
+<script type="text/javascript">
+	document.getElementById("sagor7").innerHTML=
+	parseInt("10.2365")+"<br>"+
+	parseInt("10    6")+"<br>"+
+	parseInt("10 years")+"<br>"+
+	parseInt("years 10");
+</script>
+<h2>javascript Global Methods</h2>
+<p>The parseFloat() method converts strings to numbers:</p>
+<p id="sagor8"></p>
+<script type="text/javascript">
+	document.getElementById("sagor8").innerHTML=
+	parseFloat("10")+"<br>"+
+	parseFloat("10.33")+"<br>"+
+	parseFloat("10 6");
+</script>
+<h2>javascript Number Object Properties</h2>
+<p>MAX_VALUE returns the largest possible number in javascript.</p>
+<p id="sagor9"></p>
+<script type="text/javascript">
+	var x=Number.MAX_VALUE;
+	document.getElementById("sagor9").innerHTML=x;
+</script>
+<h2>javascript Number Object Properties</h2>
+<p>POSITIVE_INFINITY</p>
+<p id="sagor10"></p>
+<script type="text/javascript">
+	var x=Number.POSITIVE_INFINITY;
+	document.getElementById("sagor10").innerHTML=x;
+</script>
+<h2>javascript Number Object Properties</h2>
+<p>POSITIVE_INFINITY is returned on overflow:</p>
+<p id="sagor11"></p>
+<script type="text/javascript">
+	var x=-1/0;
+	document.getElementById("sagor11").innerHTML=x;
+</script>
+<h2>javascript Number Object</h2>
+<p id="sagor12"></p>
+<script type="text/javascript">
+	document.getElementById("sagor12").innerHTML=Number.NaN;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Arrays</title>
+</head>
+<body>
+	<h2>JavaScript Arrays</h2>
+	<p id="sagor"></p>
+	<script type="text/javascript">
+		var cars=["saab","Volvo","BMW"];
+		document.getElementById("sagor").innerHTML=cars[0];
+	</script>
+	<h2>javascript Arrays</h2>
+	<p id="sagor1"></p>
+	<script type="text/javascript">
+		var cars=new Array("saab","Volvo","BMW")
+		document.getElementById("sagor1").innerHTML=cars;
+	</script>
+	<h2>javascript Arrays</h2>
+	<p>javascript array elements are accessed using numeric indeses (starting from 0).</p>
+	<p id="sagor2"></p>
+	<script type="text/javascript">
+		var cars=["saab","Volvo","BMW"]
+		document.getElementById("sagor2").innerHTML=cars[1]
+	</script>
+<h2>javascript Arrays</h2>
+<p>javascript array elements are accessed using numeric indexes (starting from 0)</p>
+<p id="sagor3"></p>
+<script type="text/javascript">
+	var cars=["saab","Volvo","BMW"];
+	cars[0]="oppale";
+	document.getElementById("sagor3").innerHTML=cars;
+</script>
+<h2>javascript Arrays</h2>
+<p>Arrays use numbers to access its elements.</p>
+<p id="sagor4"></p>
+<script type="text/javascript">
+	var person=["john", "doe", 45];
+	document.getElementById("sagor4").innerHTML=person[0]
+</script>
+<h2>javascript Objects</h2>
+<p>javascript uses names to access object properties.</p>
+<p id="sagor5"></p>
+<script type="text/javascript">
+	var person={firstname:"John",lastname:"Doe",age:46};
+	document.getElementById("sagor5").innerHTML=person["lastname"]
+</script>
+<h2>javascript Arrays</h2>
+<p>The length property returns the length of an array.</p>
+<p id="sagor6"></p>
+<script type="text/javascript">
+	var fruits=["Banana","orange","Apple","Mango"];
+	document.getElementById("sagor6").innerHTML=fruits.length;
+</script>
+<h2>javascript Arrays</h2>
+<p>javascript array elements are accesses usnig numeric indexes(starting from0)</p>
+<p id="sagor7"></p>
+<script type="text/javascript">
+	var fruits=["Banana","orange","Apple","Mango"];
+	var first=fruits[0];
+	document.getElementById("sagor7").innerHTML=first;
+</script>
+<h2>javascript Arrays</h2>
+<p>javascript array elements are accesses using numeric indexes (starting from0).</p>
+<p id="sagor8"></p>
+<script type="text/javascript">
+	var fruits=["coconut","papaya","jackfruit","Mango","watermelon"];
+	var last=fruits[fruits.length-1]
+	document.getElementById("sagor8").innerHTML=last;
+</script>
+<h2>javascript Arrays</h2>
+<p>The best way to loop through an array is using a standard for loop:</p>
+<p id="sagor9"></p>
+<script type="text/javascript">
+	var fruits,text,sag,i;
+	fruits=["Banana","orange","Apple","Mango"];
+	sag=fruits.length;
+	text="<ul>";
+	for (i=0; i<sag; i++){
+		text+="<li>"+fruits[i]+"</li>";
+	}
+	text+="</ul>";
+	document.getElementById("sagor9").innerHTML=text;
+</script>
+<h2>javascript Arrays</h2>
+<p>Array.forEach() calls a function for each array element.</p>
+<p>Array forEach() is not supported in Internet Explorer 8 or earlier.</p>
+<p id="sagor10"></p>
+<script type="text/javascript">
+	var fruits, text;
+	fruits=["Banana","orange","Apple","Mango"];
+	text="<ul>";
+	fruits.forEach(myFunction);
+	text+="</ul>";
+	document.getElementById("sagor10").innerHTML=text;
+	function myFunction(value){
+		text+="<li>"+value+"</li>"
+	}
+</script>
+<h2>javascript Arrays</h2>
+<p>The push method appends a new element to an array.</p>
+<button onclick="myFunction()">Try it</button>
+<p id="sagor11"></p>
+<script type="text/javascript">
+	var fruits=["Banana","Orange","Apple","Mango"];
+	document.getElementById("sagor11").innerHTML=fruits;
+	function myFunction(){
+		fruits.push("Lemon");
+		document.getElementById("sagor11").innerHTML=fruits;
+	}
+</script>
+<h2>javascript arrays</h2>
+<p>The length property provides an easy way to append new elements to an array without using the push() method.</p>
+<button onclick="myFunction()">Try </button>
+<p id="sagor12"></p>
+<script type="text/javascript">
+	var fruits=["Banana", "Orange", "Apple", "Mango"];
+	document.getElementById("sagor12").innerHTML=fruits;
+	function myFunction(){
+		fruits[fruits.length]="Lemon";
+		document.getElementById("sagor12").innerHTML=fruits;
+	}
+</script>
+<h2>javascript Arrays</h2>
+<p>Adding elements with high indexes can create undefined "holes" in an array.</p>
+<p id="sagor13"></p>
+<script type="text/javascript">
+	var fruits, text, flen, i;
+	fruits=["Banana", "Orange", "Apple", "Mango"];
+	fruits[7]="Lemon";
+	flen=fruits.length;
+	text="";
+	for (i=0; i<flen; i++){
+		text+=fruits[i]+"<br>";
+	}
+	document.getElementById("sagor13").innerHTML=text;
+</script>
+<h2>javascript Arrays</h2>
+<p id="sagor14"></p>
+<script type="text/javascript">
+	
+	var person=[];
+	person[0]="john";
+	person[1]="Doe";
+	person[2]=45;
+	document.getElementById("sagor14").innerHTML=
+	person[0]+" "+person.length;
+</script>
+<h2>javascript Arrays</h2>
+<p>If you use a named index whenaccessing ana array, JavaScript will redefine the array to a standard object and some array methods and peoperties will produce undefined or incorrect results.</p>
+<p id="sagor15"></p>
+<script type="text/javascript">
+	var person=[]
+	person["firstName"]="John";
+	person["lastName"]="Doe";
+	person["age"]=46;
+	document.getElementById("sagor15").innerHTML=
+	person[0]+" "+person.length;
+</script>
+<h2>javascript Arrays</h2>
+<p>Avoid using new Array(). Use [] instead.</p>
+<p id="sagor16"></p>
+<script type="text/javascript">
+	var points=[40,50,2,01,0,50];
+	document.getElementById("sagor16").innerHTML=points[4];
+</script>
+<h2>javascript Arrays</h2>
+<p>The typeof operator, when used on an array, returns object:</p>
+<p id="sagor17"></p>
+<script type="text/javascript">
+	var fruits=["Banana", "Orange", "Apple", "Mango"];
+	document.getElementById("sagor17").innerHTML=typeof fruits;
+</script>
+<h2>javascript Arrays</h2>
+<p>The new ECMASCRIPT 5 method isArray returns true when used on an array:</p>
+<p id="sagor18"></p>
+<script type="text/javascript">
+	var fruits=["Banana", "Orange", "Apple", "Mango"];
+	document.getElementById("sagor18").innerHTML=Array.isArray(fruits);
+</script>
+<h2>javascript Arrays</h2>
+<p>The instanceof operator returns true when used on an array:</p>
+<p id="sagor19"></p>
+<script type="text/javascript">
+	var fruits=["Banana", "Orange", "Apple", "Mango"];
+	document.getElementById("sagor19").innerHTML=fruits instanceof Array;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

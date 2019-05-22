@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h2>javascript ISO Dates</h2>
+	<p id="sagor"></p>
+	<script type="text/javascript">
+		var d=new Date("2015-03-25");
+		document.getElementById("sagor").innerHTML=d;
+	</script>
+	<h2>javascript ISO Dates</h2>
+	<p id="sagor1"></p>
+	<script type="text/javascript">
+		var d=new Date("2019-05");
+		document.getElementById("sagor1").innerHTML=d;
+	</script>
+	<h2>javascript ISO Dates</h2>
+	<p>Separate date and time with a capita T.</p>
+	<p>Indicate UTC time with a capital Z.</p>
+	<p id="sagor2"></p>
+	<script type="text/javascript">
+		var d=new Date("2015-03-25T12:00:00Z");
+		document.getElementById("sagor2").innerHTML=d;
+	</script>
+	<h2>javascript ISO Dates</h2>
+	<p>modify the time relative to UTC by adding +HH:MM or subtraction -HH:MM to the time.</p>
+	<p id="sagor3"></p>
+	<script type="text/javascript">
+		document.getElementById("sagor3").innerHTML=new Date("2015-03-25T12:00:00-06:00");
+	</script>
+<h2>javascript new Date()</h2>
+<p id="sagor4"></p>
+<script type="text/javascript">
+	var d=new Date("03/25/2015");
+	document.getElementById("sagor4").innerHTML=d;
+</script>
+<h2>javascript new Date()</h2>
+<p id="sagor5"></p>
+<script type="text/javascript">
+	var d=new Date("25mar 2015");
+	document.getElementById("sagor5").innerHTML=d;
+</script>
+<h2>javascript new Date()</h2>
+<p id="sagor6"></p>
+<script type="text/javascript">
+	var d=new Date("mar 25 2015");
+	document.getElementById("sagor6").innerHTML=d;
+</script>
+<h2>javascript Date.parse()</h2>
+<p>Date.parse() returns the number of millisecond between the date and january 1, 1970:</p>
+<p id="sagor7"></p>
+<script type="text/javascript">
+	var msec=Date.parse("March 21, 2012");
+	document.getElementById("sagor7").innerHTML=msec;
+</script>
+
+
+
+
+
+</body>
+</html>

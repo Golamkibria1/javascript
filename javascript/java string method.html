@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>string method</title>
+</head>
+<body>
+<h2>javascript string method</h2>
+<p>Replace "Microsoft" with "w3School" in the paragraph below:</p>
+<button onclick="myFunction()">Try it</button>
+<p id="sagor">Please visit Microsoft! Microsoft</p>
+<script type="text/javascript">
+	function myFunction(){
+		var str=
+		document.getElementById("sagor").innerHTML;
+		var txt=
+		str.replace("Microsoft","sagor");
+		document.getElementById("sagor").innerHTML=txt;
+	}
+</script>
+<button onclick="myFunction()">Try  it</button>
+<p id="sagor1">Please visit Microsoft and Microsoft</p>
+<script type="text/javascript">
+	function myFunction(){
+		var str=
+		document.getElementById("sagor1").innerHTML;
+		var txt=
+		str.replace("Microsoft","w3School");
+		document.getElementById("sagor1").innerHTML=txt;
+	}
+</script>
+<p>Convert string to upper case:</p>
+<button onclick="myFunction()">Try it</button>
+<p id="sagor2">Hello World</p>
+<script type="text/javascript">
+	function myFunction(){
+		var text=
+		document.getElementById("sagor2").innerHTML;
+		document.getElementById("sagor2").innerHTML=text.toUpperCase();
+	}
+</script>
+<p>convert string to lower case:</p>
+<button oneclick="myFunction">Try it</button>
+<p id="sagor3">Hello world</p>
+
+<script type="text/javascript">
+	function myFunction(){
+		var text=
+		document.getElementById("sagor3").innerHTML;
+		document.getElementById("sagor3").innerHTML=text.toLowerCase();
+	}
+</script>
+<p>Click "Try it" to display the first array element, after a string split.</p>
+<button onclick="myFunction()">Try it</button>
+<p id="sagor4"></p>
+<script type="text/javascript">
+	function myFunction(){
+		var str ="a,b,c,d,e,f";
+		var arr =str.split(",")
+		document.getElementById("sagor4").innerHTML=arr[0];
+	}
+</script>
+<p id="sagor5"></p>
+<script type="text/javascript">
+	var str="Hello";
+	var arr=str.split("");
+	var text="";
+	var t;
+	for ( g =0;g< arr.length; g++) {
+		text+=arr[g]+"<br>"
+	}
+	document.getElementById("sagor5").innerHTML=text;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
